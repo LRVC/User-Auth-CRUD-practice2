@@ -1,0 +1,10 @@
+<h1> WHATS UP YO </h1>
+
+<%= link_to 'Sign up!', sign_up_path %>
+
+<% if current_user %>
+  <p> Current user is: <%= current_user.email %></p>
+  <%= link_to 'Siggn me out this muh', sign_out_path %>
+<% else %>
+  <%= link_to 'Let me insiiiiiide', sign_in_path %>
+<% end %>
